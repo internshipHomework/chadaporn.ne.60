@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "YXpiXc7KSHXRoiyLJHy2SBcUF3ETe62iqgK/TFcUwsuGyxinoIfZXL4MlxjQlRCyUtgZgCfhXwcXfcgleiHsDQ==",
+  "success": true,
+  "projectFilePath": "/home/acer/Documents/Homework09/work3.csproj",
+  "expectedPackageFiles": [
+    "/home/acer/.nuget/packages/csvhelper/15.0.4/csvhelper.15.0.4.nupkg.sha512",
+    "/home/acer/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
