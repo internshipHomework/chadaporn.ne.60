@@ -1,0 +1,13 @@
+/home/acer/Documents/XO/bin/Debug/netcoreapp3.1/XO
+/home/acer/Documents/XO/bin/Debug/netcoreapp3.1/XO.deps.json
+/home/acer/Documents/XO/bin/Debug/netcoreapp3.1/XO.runtimeconfig.json
+/home/acer/Documents/XO/bin/Debug/netcoreapp3.1/XO.runtimeconfig.dev.json
+/home/acer/Documents/XO/bin/Debug/netcoreapp3.1/XO.dll
+/home/acer/Documents/XO/bin/Debug/netcoreapp3.1/XO.pdb
+/home/acer/Documents/XO/obj/Debug/netcoreapp3.1/XO.csprojAssemblyReference.cache
+/home/acer/Documents/XO/obj/Debug/netcoreapp3.1/XO.csproj.CoreCompileInputs.cache
+/home/acer/Documents/XO/obj/Debug/netcoreapp3.1/XO.AssemblyInfoInputs.cache
+/home/acer/Documents/XO/obj/Debug/netcoreapp3.1/XO.AssemblyInfo.cs
+/home/acer/Documents/XO/obj/Debug/netcoreapp3.1/XO.dll
+/home/acer/Documents/XO/obj/Debug/netcoreapp3.1/XO.pdb
+/home/acer/Documents/XO/obj/Debug/netcoreapp3.1/XO.genruntimeconfig.cache
