@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/acer/Documents/Homework05/work2.csproj": {}
+    "/home/acer/Documents/chadaporn.ne.60/Homework05/work2.csproj": {}
   },
   "projects": {
-    "/home/acer/Documents/Homework05/work2.csproj": {
+    "/home/acer/Documents/chadaporn.ne.60/Homework05/work2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/acer/Documents/Homework05/work2.csproj",
+        "projectUniqueName": "/home/acer/Documents/chadaporn.ne.60/Homework05/work2.csproj",
         "projectName": "work2",
-        "projectPath": "/home/acer/Documents/Homework05/work2.csproj",
+        "projectPath": "/home/acer/Documents/chadaporn.ne.60/Homework05/work2.csproj",
         "packagesPath": "/home/acer/.nuget/packages/",
-        "outputPath": "/home/acer/Documents/Homework05/obj/",
+        "outputPath": "/home/acer/Documents/chadaporn.ne.60/Homework05/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/acer/.nuget/NuGet/NuGet.Config"

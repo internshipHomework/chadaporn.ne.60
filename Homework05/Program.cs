@@ -1,125 +1,70 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-
-namespace myapp
+namespace work05
 {
-    public interface IHomework09
-    {
-        IEnumerable<IProduct> GetAllProducts();
-        void AddProductToCart(IProduct product);
-        IEnumerable<IProduct> GetProductsInCart();
-    }
-    public interface IProduct
-    {
-        string SKU { get; set; }
-        string Name { get; set; }
-        string Price { get; set; }
-    }
+    interface IHomework05
+  {
+    string DisplayLEDOnScreen(string ledNo);
+  }
 
-    public class SubProduct : IProduct
-    {
-        public string SKU { get; set; }
-        public string Name { get; set; }
-        public string Price { get; set; }
+  class LEDSetting : IHomework05
+  {
+    string[] array1 = new string[] { "1","2","3","4","5","6","7","8","9","A" };
+    string[] array3 = new string[] { "[ ]","[ ]","[ ]","[ ]","[ ]","[ ]","[ ]","[ ]","[ ]","[ ]" };
 
-    }
+    public LEDSetting() {}
 
-    public class SubHom : IHomework09
+    public void Fix(String ledNo) 
     {
-        ArrayList myAl = new ArrayList();
-        string filepath = @"product.csv";
-        List<IProduct> IProductList = new List<IProduct>();
-        public void AddProductToCart(string product)
-        {
-            List<string> lines = File.ReadAllLines(filepath).ToList();
-            foreach (var line in lines)
-            {
-                string[] entries = line.Split(',');
-                IProduct newIProduct = new SubProduct();
-                newIProduct.SKU = entries[0];
-                newIProduct.Name = entries[1];
-                newIProduct.Price = entries[2];
-                IProductList.Add(newIProduct);
+        for (int i = 0; i < 10; i++) {
+            if ( array1[i] == ledNo & array3[i] == "[!]" ){
+                array3[i] = "[ ]";
             }
-
-            ArrayList ProductName = new ArrayList();
-            ArrayList ProductPrice = new ArrayList();
-            int sum = 0;
-
-            do
-            {
-
-                Console.Write("Please input a product key:  ");
-                string inputSKU = Console.ReadLine();
-                for (int i = 0; i < SKU.Count; i++)
-                {
-                    if (inputSKU == SKU[i])
-                    {
-                        ProductName.Add(Name[i]);
-                        ProductPrice.Add(Price[i]);
-                        string v = Price[i];
-                        int x = Convert.ToInt32(v);
-                        sum = sum + x;
-                    }
-                }
-
-                Console.WriteLine("Products in your cart are: ");
-
-                for (int iii = 1; iii <= ProductName.Count; iii++)
-                {
-                    if (iii <= ProductName.Count)
-                    {
-                        int Number = Convert.ToInt32(iii);
-                        int Order = Number - 1;
-
-                        Console.WriteLine(Number + ". " + ProductName[Order] + "  " + ProductPrice[Order]);
-                    }
-                    else
-                    {
-                        Console.WriteLine("none");
-                    }
-
-                }
-                Console.WriteLine("----------------------");
-                Console.WriteLine("Total amount: " + sum + " Baht");
-                // Console.Write(sum + " Bath");
-
-            } while (true);
+            else if ( array1[i] == ledNo & array3[i] == "[ ]" ){
+                array3[i] = "[!]";
+            }
         }
-
-        public void AddProductToCart(IProduct product)
-        {
-
-            throw new NotImplementedException();
+    }
+    public string Display() 
+    { 
+        string display = "";
+        for (int i = 0; i < 10; i++) {
+            if ( array3[i] == "[!]" ){
+                display += array3[i] + " ";
+            }
+            else if ( array3[i] == "[ ]" ){
+                display += array3[i] + " ";
+            }
         }
-
-        public IEnumerable<IProduct> GetAllProducts()
-        {
-            return IProductList;
-        }
-        public IEnumerable<IProduct> GetProductsInCart()
-        {
-            return IProductList;
-        }
+        return display;
+    }
+    public String DisplayLEDOnScreen(string ledNo){
+        Fix(ledNo);
+        return Display();
+    }
+    public void Output1(){
+        Console.WriteLine(string.Join(" ", array3));
+        Console.WriteLine(string.Join("   ", array1));
 
     }
-    class Program
+    public void Output2(){
+        Console.Write("Please choose LED to turn On/Off: ");
+        string ledNo = Console.ReadLine();
+        Console.WriteLine(DisplayLEDOnScreen(ledNo));
+        Console.WriteLine(string.Join("   ", array1));
+
+    }
+  }
+
+  class App {
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            // Console.WriteLine("Products in your cart are");
-            // Console.WriteLine("none");
-            // Console.WriteLine("----------");
-            // Console.WriteLine("Total amount: 0.00 Bath");
-            SubHom panel2 = new SubHom();
-            Console.WriteLine("Please input a product key:");
-            string a = Console.ReadLine();
-            panel2.AddProductToCart(a);
+      LEDSetting panel = new LEDSetting();
+      int count = 1;
+      panel.Output1();
+        while ( count <= 100 ) {
+            panel.Output2();
+            count++;
         }
     }
-
-
+  }
 }

@@ -24,3 +24,16 @@
 /home/acer/Documents/Homework05/obj/Debug/netcoreapp3.1/work2.dll
 /home/acer/Documents/Homework05/obj/Debug/netcoreapp3.1/work2.pdb
 /home/acer/Documents/Homework05/obj/Debug/netcoreapp3.1/work2.genruntimeconfig.cache
+/home/acer/Documents/chadaporn.ne.60/Homework05/bin/Debug/netcoreapp3.1/work2
+/home/acer/Documents/chadaporn.ne.60/Homework05/bin/Debug/netcoreapp3.1/work2.deps.json
+/home/acer/Documents/chadaporn.ne.60/Homework05/bin/Debug/netcoreapp3.1/work2.runtimeconfig.json
+/home/acer/Documents/chadaporn.ne.60/Homework05/bin/Debug/netcoreapp3.1/work2.runtimeconfig.dev.json
+/home/acer/Documents/chadaporn.ne.60/Homework05/bin/Debug/netcoreapp3.1/work2.dll
+/home/acer/Documents/chadaporn.ne.60/Homework05/bin/Debug/netcoreapp3.1/work2.pdb
+/home/acer/Documents/chadaporn.ne.60/Homework05/obj/Debug/netcoreapp3.1/work2.csprojAssemblyReference.cache
+/home/acer/Documents/chadaporn.ne.60/Homework05/obj/Debug/netcoreapp3.1/work2.csproj.CoreCompileInputs.cache
+/home/acer/Documents/chadaporn.ne.60/Homework05/obj/Debug/netcoreapp3.1/work2.AssemblyInfoInputs.cache
+/home/acer/Documents/chadaporn.ne.60/Homework05/obj/Debug/netcoreapp3.1/work2.AssemblyInfo.cs
+/home/acer/Documents/chadaporn.ne.60/Homework05/obj/Debug/netcoreapp3.1/work2.dll
+/home/acer/Documents/chadaporn.ne.60/Homework05/obj/Debug/netcoreapp3.1/work2.pdb
+/home/acer/Documents/chadaporn.ne.60/Homework05/obj/Debug/netcoreapp3.1/work2.genruntimeconfig.cache
